@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Login.css";
 
 const Login = () => {
@@ -11,9 +12,9 @@ const Login = () => {
         <div className="login-text">
           Are you a new member?
           <span>
-            <a href="../Sign_Up/Sign_Up.html" style="color: #2190ff">
+            <Link to="/signup" style={{ color: "#2190ff" }}>
               Sign Up Here
-            </a>
+            </Link>
           </span>
         </div>
         <br />
