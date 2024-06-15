@@ -12,7 +12,7 @@ const initSpeciality = [
   "Ayurveda",
 ];
 
-const FindDoctorSearchIC = () => {
+const FindDoctorSearch = () => {
   const [doctorResultHidden, setDoctorResultHidden] = useState(true);
   const [searchDoctor, setSearchDoctor] = useState("");
   const [specialities, setSpecialities] = useState(initSpeciality);
@@ -92,4 +92,4 @@ const FindDoctorSearchIC = () => {
   );
 };
 
-export default FindDoctorSearchIC;
+export default FindDoctorSearch;
