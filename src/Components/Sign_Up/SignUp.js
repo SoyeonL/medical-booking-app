@@ -80,11 +80,6 @@ const SignUp = () => {
                 placeholder="Enter your name"
                 aria-describedby="helpId"
               />
-              {showerr && (
-                <div className="err" style={{ color: "red" }}>
-                  {showerr}
-                </div>
-              )}
             </div>
             <div className="form-group">
               <label htmlFor="phone">Phone</label>
@@ -99,11 +94,6 @@ const SignUp = () => {
                 placeholder="Enter your phone number"
                 aria-describedby="helpId"
               />
-              {showerr && (
-                <div className="err" style={{ color: "red" }}>
-                  {showerr}
-                </div>
-              )}
             </div>
             <div className="form-group">
               <label htmlFor="email">Email</label>
@@ -120,12 +110,12 @@ const SignUp = () => {
               />
               {showerr && (
                 <div className="err" style={{ color: "red" }}>
-                  {showerr}
+                  {showerr.msg}
                 </div>
               )}
             </div>
             <div className="form-group">
-              <label for="password">Password</label>
+              <label htmlFor="password">Password</label>
               <input
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
@@ -137,11 +127,6 @@ const SignUp = () => {
                 placeholder="Enter your password"
                 aria-describedby="helpId"
               />
-              {showerr && (
-                <div className="err" style={{ color: "red" }}>
-                  {showerr}
-                </div>
-              )}
             </div>
             <div className="btn-group">
               <button

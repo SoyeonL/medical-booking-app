@@ -41,7 +41,7 @@ const Navbar = () => {
 
     if (storedEmail) {
       setUserName(storedEmail);
-      isLoggedIn(true);
+      setIsLoggedIn(true);
     }
   }, []);
 
